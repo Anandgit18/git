@@ -3,7 +3,6 @@ provider "aws" {
   region = "ap-south-1"
   access_key = "AKIATMW4RMT4APLT6NWA"
   secret_key = "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"
-  role_arn = "arn:aws:iam::233464489208:role/Demo-role"
 }
 
 
