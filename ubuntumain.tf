@@ -161,10 +161,3 @@ resource "null_resource" "name" {
 output "container_url" {
   value = join("", ["http://", aws_instance.ec2_instance.public_ip])
 }
-
-resource "null_resource" "example" {
-  depends_on = [aws_instance.ec2_instance]
-  provisioner "local-exec" {
-    command = 'bash -c "sleep 900 && aws ec2 terminate-instances --instance-ids ${aws_instance.ec2_instance.id}" &'
-  }
-}
