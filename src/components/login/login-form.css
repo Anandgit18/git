@@ -1,0 +1,21 @@
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.button-btn {
+    border-radius: 20px;
+    width: 100px;
+}
+
+.btn-display {
+    display: flex;
+    justify-content: center;
+
+}
+.register-link{
+    display: flex ;
+    padding-left: 4px;
+    font-weight: 500;
+    font-size: 20px;
+}

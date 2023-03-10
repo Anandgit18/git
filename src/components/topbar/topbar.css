@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    font-family: 'Passions Conflict', cursive;
+    font-size: 500%;
+    color: #C0392B;
+    cursor: pointer;
+}
+
+.topbar {
+    height: 100%;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+}
+
+.topbarWrapper {
+    height: 100px;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    border: none;
+    color: #2471A3;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: dashed;
+    font-size: 100%;
+    cursor: pointer;
+    margin: 10px 20px;
+    display: inline-block;
+    position: relative;
+}
+
+.button:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #E59866;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.button:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}

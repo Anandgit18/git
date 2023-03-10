@@ -1,0 +1,13 @@
+.about {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    width: 1000px;
+    text-align: justify;
+    margin: 100px 300px;
+    font-size: small;
+}
+
+.title {
+    text-align: center;
+    color: #C0392B;
+}
