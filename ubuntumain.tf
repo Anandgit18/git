@@ -165,6 +165,6 @@ output "container_url" {
 resource "null_resource" "example" {
   depends_on = [aws_instance.ec2_instance]
   provisioner "local-exec" {
-    command = "sleep 900 && aws ec2 terminate-instances --instance-ids ${aws_instance.ec2_instance.id}"
+    command = 'bash -c "sleep 900 && aws ec2 terminate-instances --instance-ids ${aws_instance.ec2_instance.id}" &'
   }
 }
