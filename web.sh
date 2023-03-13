@@ -17,7 +17,7 @@ sudo usermod -a -G docker ubuntu
 sudo chmod 777 /var/run/docker.sock
 
 # start the container to test the image 
-docker run -d -p 85:3000 ananddocker18/terraform:updateversion
+docker run -d -p 85:3000 ananddocker18/terraform:version
 
 # references
 # https://docs.aws.amazon.com/AmazonECS/latest/developerguide/create-container-image.html
